@@ -1,21 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Like Us on Facebook</title>
+  <title>Chillehut Facebook Page</title>
+  <!-- Open Graph meta tags for link previews -->
+  <meta property="og:url" content="https://www.facebook.com/profile.php?id=61555820533011" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Chillehut Facebook Page" />
+  <meta property="og:description" content="Visit and like our Facebook page for updates on delicious food offerings and more!" />
+  <meta property="og:image" content="https://www.your-domain.com/path-to-image.jpg" /> <!-- Replace with the actual image URL -->
 </head>
 <body>
-    <h1>Like Our Page on Facebook</h1>
-    <!-- Facebook Like Plugin in an iframe -->
-    <iframe 
-        src="https://www.facebook.com/plugins/like.php?href=https://www.facebook.com/profile.php?id=61555820533011&width=300&layout=standard&action=like&size=large&share=false&height=65"
-        width="300" 
-        height="65" 
-        style="border:none;overflow:hidden" 
-        scrolling="no" 
-        frameborder="0" 
-        allow="encrypted-media">
-    </iframe>
+
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" 
+          src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0&appId=YOUR_APP_ID" 
+          nonce="FOKrbAYI">
+  </script>
+
+  <!-- Facebook Like button -->
+  <div class="fb-like" 
+       data-href="https://www.facebook.com/profile.php?id=61555820533011" 
+       data-width=""
+       data-layout="standard" 
+       data-action="like" 
+       data-size="small"  
+       data-share="true">
+  </div>
+
 </body>
 </html>
