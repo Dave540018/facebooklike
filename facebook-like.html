@@ -2,65 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Like us on Facebook - Chill E Hut</title>
-    <!-- Load Facebook SDK for JavaScript -->
+    <title>Chill_E_Hut</title>
+    <!-- Facebook SDK -->
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" 
-        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0">
+    src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v21.0">
     </script>
     <style>
         body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
             font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-            height: 100vh;
-            margin: 0;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            background-image: url('https://drive.google.com/thumbnail?id=1DqjVTlTczN1MMnIJY3zwGLBrQyzlYwN9');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
         .container {
-            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+            color: #ffffff;
             padding: 20px;
-            background: #ffffff;
-            border: 1px solid #ddd;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+    
         }
-        img {
-            max-width: 100%;
-            height: auto;
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #ffffff;
         }
-        .facebook-logo {
-            display: inline-block;
-            width: 50px;
-            height: auto;
-            margin-right: 16px;
-            margin-left: 12px
-        }
-        .like-section {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .fb-container {
             margin-top: 20px;
+            border-radius: 10px;
         }
+       
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="https://github.com/Dave540018/facebooklike/blob/main/CHILLEHUT%20LOGO%20BIGSIZE.png" alt="Chill E Hut Logo">
-        <h1>Like us on Facebook</h1>
-        <div class="like-section">
-            <img class="facebook-logo" src="https://logos-world.net/wp-content/uploads/2020/05/Facebook-Logo.jpg" alt="Facebook Logo">
-            <!-- Your Like button code -->
-            <div class="fb-like" 
+        <img src="https://drive.google.com/thumbnail?id=17zwsQWrkAz7nuoQGryp_QiMNOjoxF7Qu" alt="Chill E Hut Logo" class="logo">
+       
+        
+        <h1>Follow Us on Facebook</h1>
+        <p>Like and engage with our latest updates directly here!</p>
+        
+        <div class="fb-like" data-href="https://www.facebook.com/profile.php?id=61555820533011&amp;ref=embed_page" data-width="200px" data-layout="button_count" data-action="" data-size="" data-share="true"></div>
+        <!-- Facebook Page Plugin -->
+        <div class="fb-container">
+            <div class="fb-page"
                 data-href="https://www.facebook.com/profile.php?id=61555820533011" 
-                data-width="" 
-                data-layout="standard" 
-                data-action="like" 
-                data-size="small" 
-                data-share="true">
+                data-tabs="timeline,events,messages"
+                data-width="500" 
+                data-height="600"
+                data-small-header="false"
+                data-adapt-container-width="true"
+                data-hide-cover="true"
+                data-show-facepile="true">
             </div>
         </div>
     </div>
